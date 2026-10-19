@@ -92,9 +92,9 @@ export default function OwnerDashboardPage() {
   const [isVerifiedWhatsapp, setIsVerifiedWhatsapp] = useState(false);
 
   // QR Code Host Targeting
-  const [networkHost, setNetworkHost] = useState<string>("http://10.106.125.194:3000");
+  const [networkHost, setNetworkHost] = useState<string>("https://connecto-freco.vercel.app");
   const [qrHostMode, setQrHostMode] = useState<"wifi" | "local" | "custom">("wifi");
-  const [customHost, setCustomHost] = useState<string>("https://frecocafe.connecto.in");
+  const [customHost, setCustomHost] = useState<string>("https://connecto-freco.vercel.app");
 
   // Menu Modal / Inline Form State
   const [showAddMenuModal, setShowAddMenuModal] = useState(false);
@@ -1790,8 +1790,8 @@ export default function OwnerDashboardPage() {
                   >
                     <Smartphone className="h-4 w-4 text-crimson-400 shrink-0" />
                     <div>
-                      <span className="block text-xs font-semibold">Mobile Phone (Wi-Fi)</span>
-                      <span className="text-[10px] text-cream-400/70 font-mono">10.106.125.194:3000</span>
+                      <span className="block text-xs font-semibold">Mobile Phone / Wi-Fi</span>
+                      <span className="text-[10px] text-cream-400/70 font-mono">connecto-freco.vercel.app</span>
                     </div>
                   </button>
 
@@ -1806,8 +1806,8 @@ export default function OwnerDashboardPage() {
                   >
                     <Laptop className="h-4 w-4 text-crimson-400 shrink-0" />
                     <div>
-                      <span className="block text-xs font-semibold">Localhost (Laptop Only)</span>
-                      <span className="text-[10px] text-cream-400/70 font-mono">localhost:3000</span>
+                      <span className="block text-xs font-semibold">Live Website</span>
+                      <span className="text-[10px] text-cream-400/70 font-mono">connecto-freco.vercel.app</span>
                     </div>
                   </button>
 
@@ -1832,7 +1832,7 @@ export default function OwnerDashboardPage() {
                   <div className="rounded-lg border border-emerald-500/30 bg-emerald-500/10 p-3 text-xs text-emerald-300 flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-emerald-400 shrink-0" />
                     <span>
-                      <strong>Phone Scan Ready:</strong> Scan with your phone camera while connected to the same Wi-Fi. It will open immediately!
+                      <strong>Public Website QR:</strong> This QR opens the live Connecto website and works on phones using mobile data or Wi-Fi.
                     </span>
                   </div>
                 )}
